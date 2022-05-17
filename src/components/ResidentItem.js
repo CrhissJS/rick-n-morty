@@ -9,7 +9,7 @@ const ResidentItem = ({url}) => {
         axios
         .get(url)
         .then((res) => setResident(res.data))
-    }, []);
+    }, [url]);
 
     console.log(resident)
 
